@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">KotlinFirst</string>
+    <string name="text">Bismillah Let\'s Learn Kotlin [^o^]</string>
+    <string name="Jtext">Programmatically says: Bismillah Let\'s Learn Kotlin</string>
+</resources>
