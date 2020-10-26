@@ -1,5 +1,13 @@
 <resources>
     <string name="app_name">SplashScreen</string>
-    <string name="loading">Loading...</string>
-    <string name="welcome">Welcome..</string>
+    <string name="loading">Loading…</string>
+    <string name="textBtn">Click Button</string>
+    <string name="text">Click the button please…</string>
+    <string name="descText">Text is change on button click…</string>
+    <string name="result">This your result: </string>
+    <string name="text2">Click for move next activity</string>
+    <string name="btn2">Click Intent</string>
+    <string name="submit">Submit Data</string>
+    <string name="addData">Add Something</string>
+    <string name="descText2">Pass Data between activity using Data</string>
 </resources>
