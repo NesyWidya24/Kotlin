@@ -22,10 +22,12 @@
         android:layout_height="wrap_content"
         android:text="@string/text"/>
 
-    <view
+    <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_margin="@dimen/default_margin"/>
+        android:background="@color/design_default_color_secondary"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:layout_marginTop="8dp"/>
     <Button
         android:id="@+id/btn2"
         android:text="@string/btn2"
@@ -39,17 +41,28 @@
         android:layout_height="wrap_content"
         android:text="@string/text2"/>
 
-    <view
+    <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_margin="@dimen/default_margin"/>
+        android:background="@color/design_default_color_secondary"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:layout_marginTop="8dp"/>
 
-    <EditText
-        android:id="@+id/addData"
-        android:layout_width="match_parent"
+
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/default_margin"
-        android:hint="@string/addData"/>
+        android:layout_width="match_parent">
+
+        <EditText
+            android:hint="@string/inputText"
+            android:id="@+id/addData"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginStart="@dimen/default_margin"
+            android:layout_marginEnd="@dimen/default_margin"
+            android:layout_width="match_parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btnSubmit"
@@ -63,12 +76,12 @@
         android:layout_height="wrap_content"
         android:text="@string/descText2"/>
 
-
-
-    <view
+    <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_margin="@dimen/default_margin"/>
+        android:background="@color/design_default_color_secondary"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:layout_marginTop="8dp"/>
 
     <Button
         android:id="@+id/btnList"
@@ -81,5 +94,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/descText2"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/design_default_color_secondary"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnCustomList"
+        android:text="@string/customList"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/descText3"/>
 
 </LinearLayout>

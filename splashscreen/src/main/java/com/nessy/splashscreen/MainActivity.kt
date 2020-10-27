@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         val  addData = findViewById<EditText>(R.id.addData)
         val  submitData = findViewById<Button>(R.id.btnSubmit)
         val  btnList = findViewById<Button>(R.id.btnList)
+        val  btnCustomList = findViewById<Button>(R.id.btnCustomList)
 
 //        1
         myBtn.setOnClickListener {
@@ -46,6 +47,8 @@ class MainActivity : AppCompatActivity() {
 
 
 //        4
-        btnList.setOnClickListener { startActivity(Intent(this@MainActivity, NewActivity::class.java)) }
+        btnList.setOnClickListener { startActivity(Intent(this@MainActivity, ListView::class.java)) }
+//        5
+        btnCustomList.setOnClickListener { startActivity(Intent(this@MainActivity, ListView::class.java)) }
     }
 }

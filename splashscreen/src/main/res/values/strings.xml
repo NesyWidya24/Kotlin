@@ -8,7 +8,11 @@
     <string name="text2">Click for move next activity</string>
     <string name="btn2">Click Intent</string>
     <string name="submit">Submit Data</string>
-    <string name="addData">Add Something</string>
+    <string name="inputText">Input Text</string>
     <string name="descText2">Pass Data between activity using Data</string>
     <string name="list">See List</string>
+    <string name="customList">See Custom List</string>
+    <string name="descText3">Custom Listview with item click listener</string>
+    <string name="title">Title</string>
+    <string name="desc">Description</string>
 </resources>
