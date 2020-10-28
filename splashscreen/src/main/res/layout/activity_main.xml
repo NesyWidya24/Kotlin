@@ -113,4 +113,43 @@
         android:layout_height="wrap_content"
         android:text="@string/descText3"/>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/design_default_color_secondary"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnShowAlertDialog"
+        android:text="@string/showAlertDialog"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/descText4"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/design_default_color_secondary"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnSingleAlertDialog"
+        android:text="@string/singleAlertDialog"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/descText5"/>
+
 </LinearLayout>

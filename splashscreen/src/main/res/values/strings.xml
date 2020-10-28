@@ -15,4 +15,8 @@
     <string name="descText3">Custom Listview with item click listener</string>
     <string name="title">Title</string>
     <string name="desc">Description</string>
+    <string name="showAlertDialog">Show Alert Dialog</string>
+    <string name="descText4">Alert Dialog</string>
+    <string name="singleAlertDialog">Single Alert Dialog</string>
+    <string name="descText5">Single Choice Alert Dialog</string>
 </resources>
