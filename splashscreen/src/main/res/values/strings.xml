@@ -19,4 +19,7 @@
     <string name="descText4">Alert Dialog</string>
     <string name="singleAlertDialog">Single Alert Dialog</string>
     <string name="descText5">Single Choice Alert Dialog</string>
+    <string name="alertDialog">ShowAlert</string>
+    <string name="descText6">Preference Colors</string>
+    <string name="descPositive">Your preferred colors…</string>
 </resources>

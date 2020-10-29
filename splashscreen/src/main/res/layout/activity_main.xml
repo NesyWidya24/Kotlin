@@ -1,155 +1,182 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center_horizontal"
-    android:layout_margin="@dimen/default_margin"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btn"
-        android:text="@string/textBtn"
-        android:textAllCaps="false"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-    <TextView
-        android:id="@+id/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/text"/>
-
-    <View
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/design_default_color_secondary"
-        android:layout_marginBottom="@dimen/default_margin"
-        android:layout_marginTop="8dp"/>
-    <Button
-        android:id="@+id/btn2"
-        android:text="@string/btn2"
-        android:textAllCaps="false"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-    <TextView
-        android:id="@+id/text2"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/text2"/>
+        android:layout_margin="@dimen/default_margin"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/design_default_color_secondary"
-        android:layout_marginBottom="@dimen/default_margin"
-        android:layout_marginTop="8dp"/>
-
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent">
-
-        <EditText
-            android:hint="@string/inputText"
-            android:id="@+id/addData"
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/default_margin"
-            android:layout_marginStart="@dimen/default_margin"
-            android:layout_marginEnd="@dimen/default_margin"
-            android:layout_width="match_parent" />
+            android:text="@string/textBtn"
+            android:textAllCaps="false" />
 
-    </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text" />
 
-    <Button
-        android:id="@+id/btnSubmit"
-        android:text="@string/submit"
-        android:textAllCaps="false"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:background="@color/design_default_color_secondary" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/descText2"/>
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn2"
+            android:textAllCaps="false" />
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/design_default_color_secondary"
-        android:layout_marginBottom="@dimen/default_margin"
-        android:layout_marginTop="8dp"/>
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text2" />
 
-    <Button
-        android:id="@+id/btnList"
-        android:text="@string/list"
-        android:textAllCaps="false"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:background="@color/design_default_color_secondary" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/descText2"/>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/design_default_color_secondary"
-        android:layout_marginBottom="@dimen/default_margin"
-        android:layout_marginTop="8dp"/>
 
-    <Button
-        android:id="@+id/btnCustomList"
-        android:text="@string/customList"
-        android:textAllCaps="false"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/descText3"/>
+            <EditText
+                android:id="@+id/addData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_marginStart="@dimen/default_margin"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginEnd="@dimen/default_margin"
+                android:hint="@string/inputText"
+                android:autofillHints="@string/inputText" />
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/design_default_color_secondary"
-        android:layout_marginBottom="@dimen/default_margin"
-        android:layout_marginTop="8dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
-        android:id="@+id/btnShowAlertDialog"
-        android:text="@string/showAlertDialog"
-        android:textAllCaps="false"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:textAllCaps="false" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/descText4"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/descText2" />
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/design_default_color_secondary"
-        android:layout_marginBottom="@dimen/default_margin"
-        android:layout_marginTop="8dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:background="@color/design_default_color_secondary" />
 
-    <Button
-        android:id="@+id/btnSingleAlertDialog"
-        android:text="@string/singleAlertDialog"
-        android:textAllCaps="false"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/list"
+            android:textAllCaps="false" />
 
-    <TextView
-        android:id="@+id/txtResult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/descText5"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/descText2" />
 
-</LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:background="@color/design_default_color_secondary" />
+
+        <Button
+            android:id="@+id/btnCustomList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/customList"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/descText3" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:background="@color/design_default_color_secondary" />
+
+        <Button
+            android:id="@+id/btnShowAlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/showAlertDialog"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/descText4" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:background="@color/design_default_color_secondary" />
+
+        <Button
+            android:id="@+id/btnSingleAlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/singleAlertDialog"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/descText5" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:background="@color/design_default_color_secondary" />
+
+        <Button
+            android:id="@+id/btnAlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alertDialog"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/txtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/descText6" />
+    </LinearLayout>
+</ScrollView>
