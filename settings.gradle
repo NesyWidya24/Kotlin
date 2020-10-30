@@ -1,4 +1,3 @@
-include ':buttonclickevent'
 include ':splashscreen'
 include ':firstapp'
 rootProject.name = "KotlinFirst"

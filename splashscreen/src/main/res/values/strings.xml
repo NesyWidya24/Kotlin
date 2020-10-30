@@ -22,4 +22,8 @@
     <string name="alertDialog">ShowAlert</string>
     <string name="descText6">Preference Colors</string>
     <string name="descPositive">Your preferred colors…</string>
+    <string name="alertDialogCustom">Alert Custom</string>
+    <string name="descText7">Alert Dialog with Custom Layout Programmatically</string>
+    <string name="enterName"> Enter Name</string>
+    <string name="enterEmail"> Enter Email</string>
 </resources>

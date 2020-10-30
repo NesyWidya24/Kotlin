@@ -3,7 +3,8 @@ package com.nessy.splashscreen
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
+import android.util.TypedValue
+import android.widget.*
 import androidx.appcompat.app.AlertDialog
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
@@ -151,5 +152,42 @@ class MainActivity : AppCompatActivity() {
             val dialog = builder.create()
             dialog.show()
         }
+
+        btnAlertDialogCustom.setOnClickListener {
+            val mBuilder = AlertDialog.Builder(this)
+            val mLayout = ScrollView(this)
+            val mTxtName = TextView(this)
+            val mTxtEmail = TextView(this)
+            val mEtName = EditText(this)
+            val mEtEmail = EditText(this)
+
+            mTxtName.text = getString(R.string.enterName)
+            mTxtEmail.text = getString(R.string.enterEmail)
+            mTxtName.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16f)
+            mTxtEmail.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16f)
+            mEtName.setSingleLine()
+            mEtEmail.setSingleLine()
+            mEtName.hint = "Name"
+            mEtEmail.hint = "Email"
+            mLayout.addView(mTxtName)
+            mLayout.addView(mEtName)
+            mLayout.addView(mTxtEmail)
+            mLayout.addView(mEtEmail)
+            mLayout.setPadding(50, 40, 50, 10)
+
+            mBuilder.setView(mLayout)
+            mBuilder.setPositiveButton("Done") { dialogInterface, i ->
+                //get text from edit texts
+                val name = mEtName.text.toString()
+                val email = mEtEmail.text.toString()
+                //set text to textView
+                txtView2.text = "Name: " + name + "\nEmail: " + email
+            }
+            mBuilder.setNeutralButton("Cancel"){dialogInterface, i ->
+                dialogInterface.dismiss()
+            }
+            mBuilder.create().show()
+        }
+
     }
 }
